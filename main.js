@@ -1,8 +1,8 @@
 console.log('Hello world from external scripts');
 
-var idade = prompt('Qual sua idade?');
+// var idade = prompt('Qual sua idade?');
 
-var idadep = parseInt(idade);
+// var idadep = parseInt(idade);
 
 // if (idadep >= 18){
 // 		console.log('Você foi autorizado');
@@ -10,17 +10,17 @@ var idadep = parseInt(idade);
 // 	console.log('Você não tem idade mínima para acessar essa página');
 // }
 
-switch(true){
-	case (idadep >=18):
-		console.log('Você foi autorizado');
-	break;
-	case (idadep < 18):
-		console.log('Você não tem idade mínima para acessar essa página');
-	break;
-	default:
-		console.log('Dado inválido');
-	break;
-}
+// switch(true){
+// 	case (idadep >=18):
+// 		console.log('Você foi autorizado');
+// 	break;
+// 	case (idadep < 18):
+// 		console.log('Você não tem idade mínima para acessar essa página');
+// 	break;
+// 	default:
+// 		console.log('Dado inválido');
+// 	break;
+// }
 
 // var numero  = 3;
 // var numero1 = 1;
@@ -57,3 +57,10 @@ switch(true){
 
 // console.log(typeof myfunction);
 // myfunction();
+// 
+var i=0;
+
+while (i<10){
+	console.log(i);
+	i++;
+}
