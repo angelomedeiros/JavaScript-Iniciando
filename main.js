@@ -58,9 +58,13 @@ console.log('Hello world from external scripts');
 // console.log(typeof myfunction);
 // myfunction();
 // 
-var i=0;
+// var i=0;
 
-while (i<10){
-	console.log(i);
-	i++;
+// while (i<10){
+// 	console.log(i);
+// 	i++;
+// }
+// 
+for (var a = 0; a < 10; a++) {
+	console.log(a);
 }
