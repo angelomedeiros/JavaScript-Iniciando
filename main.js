@@ -76,8 +76,13 @@ console.log('Hello world from external scripts');
 // 	}
 // )
 // 
-function funcao(name){
-	console.log('Nome =>', name);
-}
+// function funcao(name){
+// 	console.log('Nome =>', name);
+// };
 
-funcao("Angelo");
+// funcao("Angelo");
+
+(function (teste){
+	console.log('Nome =>', teste);
+})("Angelo Medeiros");
+
