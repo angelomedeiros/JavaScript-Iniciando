@@ -69,9 +69,15 @@ console.log('Hello world from external scripts');
 // 	console.log(a);
 // }
 
-[0,1,2,3,4,5,6].forEach(
-	function(value,key){
-		// console.log(value);
-		console.log(value,key);
-	}
-)
+// [0,1,2,3,4,5,6].forEach(
+// 	function(value,key){
+// 		// console.log(value);
+// 		console.log(value,key);
+// 	}
+// )
+// 
+function funcao(name){
+	console.log('Nome =>', name);
+}
+
+funcao("Angelo");
