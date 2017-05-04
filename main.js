@@ -1,37 +1,47 @@
 console.log('Hello world from external scripts');
 
-var numero  = 3;
-var numero1 = 1;
+var idade = prompt('Qual sua idade?');
 
-console.log(typeof numero);
+var idadep = parseInt(idade);
 
-numero = "Angelo " + numero1;
-
-console.log(numero);
-
-numero = numero + " " + numero1;
-
-console.log(numero);
-
-numero = 6;
-
-numero = 6 + numero1;
-
-console.log(typeof numero);
-console.log(numero);
-
-function myFunction(){
-	var numero = 0.1+123;
-	console.log(numero);
+if (idadep >= 18){
+		console.log('Você foi autorizado');
+} else{
+	console.log('Você não tem idade mínima para acessar essa página');
 }
 
-myFunction();
+// var numero  = 3;
+// var numero1 = 1;
 
-// Se tirar o my, a função será do tipo anônima
-var myfunction = function my(){      
-	var numero = 0.1+123;
-	console.log(numero);
-}
+// console.log(typeof numero);
 
-console.log(typeof myfunction);
-myfunction();
+// numero = "Angelo " + numero1;
+
+// console.log(numero);
+
+// numero = numero + " " + numero1;
+
+// console.log(numero);
+
+// numero = 6;
+
+// numero = 6 + numero1;
+
+// console.log(typeof numero);
+// console.log(numero);
+
+// function myFunction(){
+// 	var numero = 0.1+123;
+// 	console.log(numero);
+// }
+
+// myFunction();
+
+// // Se tirar o my, a função será do tipo anônima
+// var myfunction = function my(){      
+// 	var numero = 0.1+123;
+// 	console.log(numero);
+// }
+
+// console.log(typeof myfunction);
+// myfunction();
