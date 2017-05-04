@@ -4,10 +4,22 @@ var idade = prompt('Qual sua idade?');
 
 var idadep = parseInt(idade);
 
-if (idadep >= 18){
+// if (idadep >= 18){
+// 		console.log('Você foi autorizado');
+// } else{
+// 	console.log('Você não tem idade mínima para acessar essa página');
+// }
+
+switch(true){
+	case (idadep >=18):
 		console.log('Você foi autorizado');
-} else{
-	console.log('Você não tem idade mínima para acessar essa página');
+	break;
+	case (idadep < 18):
+		console.log('Você não tem idade mínima para acessar essa página');
+	break;
+	default:
+		console.log('Dado inválido');
+	break;
 }
 
 // var numero  = 3;
