@@ -82,7 +82,15 @@ console.log('Hello world from external scripts');
 
 // funcao("Angelo");
 
-(function (teste){
-	console.log('Nome =>', teste);
-})("Angelo Medeiros");
+// (function (teste){
+// 	console.log('Nome =>', teste);
+// })("Angelo Medeiros");
+// 
+var teste1 = prompt('Qual o seu nome?');
+
+function meu_nome(nome){
+	return nome + " Medeiros Móbrega";
+};
+
+console.log(meu_nome(teste1));
 
