@@ -86,11 +86,55 @@ console.log('Hello world from external scripts');
 // 	console.log('Nome =>', teste);
 // })("Angelo Medeiros");
 // 
-var teste1 = prompt('Qual o seu nome?');
+// var teste1 = prompt('Qual o seu nome?');
 
-function meu_nome(nome){
-	return nome + " Medeiros Móbrega";
-};
+// function meu_nome(nome){
+// 	return nome + " Medeiros Móbrega";
+// };
 
-console.log(meu_nome(teste1));
+//OBS>:Se a função for declarada em uma variavel ela só pode ser chamada depois.
+// console.log(meu_nome(teste1));
+// 
+// console.log(typeof getArea);
+//
+// console.log(getArea(3,4));
+//
+// area1 = getArea(5,6);
+//
+// console.log(area1);
+//
+// function getArea(largura,altura){
+// 	return largura*altura;
+// }
+
+//Função anônima
+// (function getArea(largura,altura){
+// 	console.log(largura*altura);
+// }(7,9))
+
+
+var prop1 = prompt('Qual o moodelo?');
+var prop2 = prompt('Qual a cor?');
+var prop3 = prompt('Qual o tipo?');
+
+//  Literal Notation
+//  var obejeto = {
+// 	modelo:prop1,
+// 	cor:prop2,
+// 	color:prop3,
+// };
+
+
+//Literal Notation
+var objeto = {};
+objeto.modelo = prop1;
+objeto.cor    = prop2;
+objeto.tipo   = prop3;
+
+// Deleta a propriedade cor.
+delete objeto.cor;
+test0 = JSON.stringify(objeto);
+console.log(test0);
+console.log(objeto);
+
 
