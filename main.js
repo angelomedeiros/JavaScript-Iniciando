@@ -113,9 +113,9 @@ console.log('Hello world from external scripts');
 // }(7,9))
 
 
-var prop1 = prompt('Qual o moodelo?');
-var prop2 = prompt('Qual a cor?');
-var prop3 = prompt('Qual o tipo?');
+// var prop1 = prompt('Qual o moodelo?');
+// var prop2 = prompt('Qual a cor?');
+// var prop3 = prompt('Qual o tipo?');
 
 //  Literal Notation
 //  var obejeto = {
@@ -126,15 +126,63 @@ var prop3 = prompt('Qual o tipo?');
 
 
 //Literal Notation
-var objeto = {};
-objeto.modelo = prop1;
-objeto.cor    = prop2;
-objeto.tipo   = prop3;
+// var objeto = {};
+// objeto.modelo = prop1;
+// objeto.cor    = prop2;
+// objeto.tipo   = prop3;
 
-// Deleta a propriedade cor.
-delete objeto.cor;
-test0 = JSON.stringify(objeto);
-console.log(test0);
-console.log(objeto);
+// // Deleta a propriedade cor.
+// delete objeto.cor;
+// test0 = JSON.stringify(objeto);
+// console.log(test0);
+// console.log(objeto);
 
+var click_me = document.getElementById('click_me');
+var formulario = document.getElementsByClassName('number_val_input')[1];
+var botao_gerar = document.getElementById('gerar_btn');
+var var2 = document.getElementsByTagName('body')[0];
 
+var criar_select = document.createElement('select');
+var2.appendChild(criar_select);
+
+for (i=1;i<10;i++){
+	var opcao = document.createElement('option');
+	opcao.value = i;
+	opcao.innerHTML = i;
+	criar_select.appendChild(opcao);
+}
+
+botao_gerar.addEventListener('click',generate);
+
+function generate(){
+	var valor = formulario.value;
+
+	for (var i = 0; i <  parseInt(valor); i++){
+		var frml = document.createElement('div');
+		frml.id  = "btn_" + i;
+		frml.innerHTML = "É burrão!";
+
+		var var1 = document.getElementById('aqui');
+		var1.appendChild(frml);
+	}	
+}
+
+click_me.addEventListener('click', fnClickMe)
+
+function fnClickMe(){
+	alert('You clicked me')
+}
+
+function validateNumber(){
+	var number = document.getElementById("number_val").value;
+
+	if (isNaN(number) || (number >= 1 && number <= 10)){
+		alert('Input is not valid');
+	} else {
+		alert('Input is valid');
+	}
+}
+
+function over(obj){
+	obj.innerHTML = "É burrão!";
+}
